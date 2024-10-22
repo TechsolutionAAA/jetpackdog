@@ -46,7 +46,7 @@
     font-weight: lighter;
     transform: scale(1.1) translateY(-64%) rotate(-13deg);
 }
-p{
+.ca-pic{
     position: absolute;
     right: 26%;
     top: 78%;
@@ -56,10 +56,7 @@ p{
     font-weight: lighter;
     font-family: MyFont1;
 }
-p:hover{
-    text-transform: uppercase;
-}
-span{
+.bird-pic{
     position: absolute;
     right: 21%;
     top: 92%;
