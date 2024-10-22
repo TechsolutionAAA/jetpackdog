@@ -1,0 +1,162 @@
+
+
+@font-face {
+    font-family: 'MyFont'; /* You can name it however you like */
+    src: url('../fonts/ReallyBetter.otf') format('opentype'); /* Path to the font file */
+    font-weight: normal; /* Adjust as necessary */
+    font-style: normal; /* Adjust as necessary */
+}
+
+@font-face {
+    font-family: 'MyFont1'; /* You can name it however you like */
+    src: url('../fonts/ChalkBoard.otf') format('opentype'); /* Path to the font file */
+    font-weight: normal; /* Adjust as necessary */
+    font-style: normal; /* Adjust as necessary */
+}
+.first-title{
+    font-family: Madefor-Text, Helvetica Neue, Helvetica, Arial, メイリオ, meiryo, ヒラギノ角ゴ pro w3, hiragino kaku gothic pro, sans-serif;
+    font-size: 14px;
+    gap: 3px;
+    line-height: 14px;
+    transition: .4s;
+}
+.first-title:hover{
+    color: hsl(251, 87%, 50%);
+}
+.bluescreen{
+    background-color: #CBF0FF;
+    position: relative;
+    height: 100vh;
+}
+.bluescreen .col-6{
+    height: 100%;
+}
+.zet{
+    position: absolute;
+    left: 10%;
+    top: 38%;
+    transform: translateY(-50%) scale(1.1) rotate(15deg);
+}
+.zet-letter{
+    position: absolute;
+    right: 14%;
+    top: 42%;
+    letter-spacing: 8px;
+    font-size: 95px;
+    font-weight: lighter;
+    transform: scale(1.1) translateY(-64%) rotate(-13deg);
+}
+p{
+    position: absolute;
+    right: 26%;
+    top: 78%;
+    transform: translateY(-80%) rotate(-6deg);
+    font-size: 50px;
+    transition: all 0.5s ease;
+    font-weight: lighter;
+    font-family: MyFont1;
+}
+p:hover{
+    text-transform: uppercase;
+}
+span{
+    position: absolute;
+    right: 21%;
+    top: 92%;
+    transform: translateY(-80%);
+    font-weight: lighter;
+    font-size: 35px;
+}
+h5{
+    padding: 8px 0;
+}
+.player{
+    align-self: flex-end;
+    margin-bottom: 40px;
+    margin-left: 70px;
+}
+button{
+    border: 0;
+    font-size: 24px;
+    color: black;
+    transition: all .4s;
+}
+button:hover{
+    color: hsl(251, 87%, 50%);
+}
+input{
+    background: transparent;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 8px 0;
+    position: absolute;
+    top: -8px;
+    transition: color .3s ease;
+    width: 100%;
+}
+.controls img{
+    width: 70px;
+    height: 70px;
+}
+h6{
+    padding-left: 19px;
+    font-size: 16px;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: rgba(0,0,0,0.6);
+    
+}
+@media (max-width : 1023px){
+    .bluescreen{
+        flex-wrap: wrap;
+        padding: 8px 16px;
+    }
+    .col-6{
+        width: 100%;
+    }
+    .zet, .zet-letter{
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: 100%;
+    }
+}
+audio{
+    
+    color: #CBF0FF;
+}
+
+
+.react-audio-player {
+    background-color: #CBF0FF; /* Change background color */
+    border-radius: 8px;        /* Add rounded corners */
+    padding: 10px;             /* Add some padding */
+}
+
+.ramp-controls {
+    display: flex;             /* Use flexbox for layout */
+    justify-content: space-between; /* Space controls */
+}
+
+.ramp-play,
+.ramp-pause {
+    background-color: black;  /* Change button background color */
+    color: red;                /* Change button text color */
+    border: none;                /* Remove border */
+    border-radius: 5px;         /* Round button corners */
+    padding: 10px;              /* Add padding */
+    cursor: pointer;     
+    transition: all .4s;        /* Pointer cursor on hover */
+}
+
+.ramp-play:hover,
+.ramp-pause:hover {
+    background-color:hsl(251, 87%, 50%);  /* Darken button on hover */
+}
